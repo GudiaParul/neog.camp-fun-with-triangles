@@ -13,9 +13,9 @@ return angleSum;
 function formTriangle() {
  var angleSum = calculateSum(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
     if (angleSum === 180){
-        console.log("Triangle is form");
+        output.innerText = "Triangle is form"
     } else {
-        console.log("Triangle is not form");
+        output.innerText = "Triangle is not form"
     }
     
 }
