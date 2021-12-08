@@ -3,15 +3,15 @@ var button = document.querySelector("#is-triangle-btn")
 var output = document.querySelector("#output")
 
 
-function calculateSum(Angle1,Angle2, Angle3){
-var angleSum = Angle1 + Angle2 + Angle3;
-return angleSum;
+function calculateSum(){
+return (Number(inputs[0].value) + Number(inputs[1].value) + Number(inputs[2].value));
 }
 
 
 
+
 function formTriangle() {
- var angleSum = calculateSum(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
+ var angleSum = calculateSum();
     if (angleSum === 180){
         output.innerText = "Triangle is form"
     } else {
@@ -19,8 +19,5 @@ function formTriangle() {
     }
     
 }
-
-
-
 
 button.addEventListener("click", formTriangle)
